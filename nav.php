@@ -5,6 +5,9 @@
     <title>Hyperpost Navbar</title>
     <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
     <style>
+            .bg-dark {
+                backdrop-filter: blur(5px);
+        }
     </style>
 </head>
 <body>

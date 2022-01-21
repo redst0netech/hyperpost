@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Hyperpost Navbar</title>
-    <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/zephyr/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
-            .bg-dark {
-                backdrop-filter: blur(5px);
-        }
+    .redhat {
+        font-family: 'Red Hat Display', sans-serif;
+    }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Hyperpost Beta</a>
+    <a class="navbar-brand redhat" href="#"><b>hyperpost.</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,25 +30,9 @@
         <li class="nav-item">
           <a class="nav-link" href="dashboard.php">Dashboard</a>
         </li>
-       <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Placeholder</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Placeholder</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>-->
       </ul>
       <form class="d-flex">
-          <b class="text-info">@<?php echo htmlspecialchars($_SESSION["username"]); ?></b>
+          <b class="text-info"><?php echo htmlspecialchars(@$_SESSION["username"]); ?></b>
         <!--on login and register pages, nothing is shown here, since normally there would be a username shown here-->
       </form>
     </div>

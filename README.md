@@ -1,5 +1,6 @@
+![hyperpost logo](http://insider.forzasoft.ml/hp.png)
 # hyperpost (name subject to change)
-Hyperpost is a work-in-progress social network.
+Hyperpost is a Twitter-like social network.
 
 # Selfhosting requirements
 To selfhost Hyperpost, you'll need:
@@ -8,4 +9,13 @@ To selfhost Hyperpost, you'll need:
 - Windows (recommended) or Linux
 
 # How to setup
-Start Apache and MySQL. Download the source code from this respository. Extract it and move the files to the htdocs (or whatever folder your web server uses). Now, import the hyperpost-clean.sql file into your SQL database. Edit the config.php file if you need to. If everything was done correctly, you should now have a functioning Hyperpost instance!
+Start Apache and MySQL. Clone the source code from this respository. Extract it and move the files to the htdocs (or whatever folder your web server uses). Now, import the hyperpost-clean.sql file into your SQL database. Edit the config.php file if you need to. If everything was done correctly, you should now have a functioning Hyperpost instance!
+
+# Why restart development?
+The old codebase was HORRIBLE. Therefore, we are restarting it with the following things:
+- New DB Structure
+- New UI
+- More Features
+- Actually having the ability to post
+- and more (probably)....
+

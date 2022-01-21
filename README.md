@@ -1,4 +1,4 @@
-# hyperpost
+# hyperpost (name subject to change)
 Hyperpost is a work-in-progress social network.
 
 # Selfhosting requirements

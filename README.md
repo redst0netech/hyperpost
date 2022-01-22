@@ -3,6 +3,7 @@
 Hyperpost is a Twitter-like social network.
 
 # Selfhosting
+## WARNING: AT THIS POINT HYPERPOST IS NOT READY FOR SELFHOSTING
 ## Requirements
 To selfhost Hyperpost, you'll need:
 - MySQL and Apache (XAMPP comes with both of these, although similar software could be used)
